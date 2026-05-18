@@ -1,56 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-     select Product : <select name="" id="product">
-        <option value="323233">AC</option>
-        <option value="565321">Tv</option>
-        <option value="54554">Regidd</option>
-        <option value="32356233">laptop</option>
+  </head>
+  <body id="mybody">
+    select Product :
+    <select name="" id="product">
+      <option value="323233">AC</option>
+      <option value="565321">Tv</option>
+      <option value="54554">Regidd</option>
+      <option value="32356233">laptop</option>
     </select>
-    <br><br>
-    net prize : <input type="text" id="prize"> <br><br>
+    <br /><br />
+    net prize : <input type="text" id="prize" /> <br /><br />
 
-    qauntiti : <input type="text"  id="quantity"> <br><br>
-    total Amount : <input type="text" id="amount">
- <br><br>
+    qauntiti : <input type="text" id="quantity" /> <br /><br />
+    total Amount : <input type="text" id="amount" /> <br /><br />
     <!-- mouse event -->
 
-    <img src="offblb.jpg" style="width: 500px;" alt="" id="bulb">
-    
+    <img src="offblb.jpg" style="width: 200px" alt="" id="bulb" />
+
+    <h1>keypresss event</h1>
+    <p>press any key to display current Date:</p>
+    <input type="text" id="key" />
+
+    <br /><br />
+    <br />
+
+     <input type="text" id="rows" placeholder="Enter Rows" /> <br />
+     <input type="text" id="cols" placeholder="Enter Cols" /> <br />
+     <input type="button" value="Generate Table" id="btn1" />
+    <br />
+
     <script>
-     var product = document.getElementById("product");
-     var qunatity = document.getElementById("quantity");
-     var amount = document.getElementById("amount");
-     var prize = document.getElementById("prize");
+      var product = document.getElementById("product");
+      var qunatity = document.getElementById("quantity");
+      var amount = document.getElementById("amount");
+      var prize = document.getElementById("prize");
 
-     product.addEventListener("change",()=>{
-         prize.value = product.value;
-     });
+      product.addEventListener("change", () => {
+        prize.value = product.value;
+      });
 
-     amount.addEventListener("focus",()=>{
-    amount.value=product.value * qunatity.value;
-    });
-    
-
- 
-
+      amount.addEventListener("focus", () => {
+        amount.value = product.value * qunatity.value;
+      });
     </script>
 
     <script>
-   //mouse 
-    var a = document.getElementById("bulb");
-a.addEventListener("mouseover",()=>{
-    a.src= "onblb.jpg";
-}); 
-    a.addEventListener("mouseout",()=>{
-    a.src= "offblb.jpg";
-});
-
+      //mouse
+      var a = document.getElementById("bulb");
+      a.addEventListener("mouseover", () => {
+        a.src = "onblb.jpg";
+      });
+      a.addEventListener("mouseout", () => {
+        a.src = "offblb.jpg";
+      });
     </script>
-</body>
+
+    <script>
+      //keypress event
+      var key = document.getElementById("key");
+      key.addEventListener("keypress", () => {
+        var a = new Date();
+        alert(a);
+      });
+    </script>
+
+    <script>
+      var rows = document.getElementById("rows");
+      var cols = document.getElementById("cols");
+      var btn1 = document.getElementById("btn1");
+      btn1.addEventListener("click", () => {
+        document.write("<table border='2' width='50%'>");
+        for (let i = 0; i < rows.value; i++) {
+          document.write("<tr>");
+          for (j = 0; j < cols.value; j++) {
+            document.write("<td>" + "[" + i + "]" + "[" + j + "]" + "</td>");
+          }
+          document.write("</tr>");
+        }
+        document.write("</table>");
+      });
+    </script>
+
+  
+    <script>
+      var colors = ["red", "green", "blue", "pink", "black", "orange"];
+      var mybody = document.getElementById("mybody");
+      var i = 0;
+      setInterval(() => {
+        mybody.style.backgroundColor = colors[i];
+        ++i;
+        if (i == colors.length) {
+          i = 0;
+        }
+      }, 1000);
+    </script>
+  </body>
 </html>
