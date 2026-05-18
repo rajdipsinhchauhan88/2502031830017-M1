@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        input {
+            border-radius: 15px;
+            padding: 7px;
+            color: red;
+            background-color: rgb(255, 255, 255);
+             transition: 5s;
+        }
+
+        form {
+
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                        transition: 5s;
+        }
+    </style>
+</head>
+
+<body style="display: flex; justify-content: center;">
+
+    <form action="" style="background-color: rgb(244, 255, 195); padding: 10px;">
+
+        <h2 style="display: flex; width: 100%; justify-content: center;">Registration Form</h2>
+
+        <table border="2">
+
+            <tr>
+                <th>First Name</th>
+                <td>
+                    <input type="text" name="Fname" required placeholder="Enter First Name">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Last Name</th>
+                <td>
+                    <input type="text" name="Lname" required placeholder="Enter Last Name">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Contact No.</th>
+                <td>
+                    <input type="number" name="contact" required placeholder="Enter Contact">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Landline No.</th>
+                <td>
+                    <input type="number" name="landline" required placeholder="Enter Landline No.">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" required
+                        placeholder="Enter Your Email ID">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Password</th>
+                <td>
+                    <input type="password" name="password" required placeholder="Enter a New Password">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Date Of Birth</th>
+                <td>
+                    <input type="date" name="dob" required>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Age</th>
+                <td>
+                    <input type="number" name="age" required placeholder="Enter Your Age">
+                </td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="Gender" value="Male" required>Male</input>
+                    <input type="radio" name="Gender" value="Female" required>Female</input>
+                </td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>
+                    <textarea name="address" placeholder="Enter your address" rows="4" cols="40"></textarea>
+                </td>
+            </tr>
+            
+            <tr>
+                <th>City</th>
+                <td>
+                    <select name="city">
+
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="Junagadh">Junagadh</option>
+                        <option value="Morbi">Morbi</option>
+                        <option value="AMD">AMD</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Pincode</th>
+                <td>
+                    <input type="number" name="pincode" required placeholder="Enter Your Pincode">
+                </td>
+            </tr>
+            <tr>
+                <th>Joining Date</th>
+                <td>
+                    <input type="date" name="JD" required>
+                </td>
+            </tr>
+            <tr>
+                <th>Confirm Your Form</th>
+                <td>
+                    <button>Submit</button>
+                    <input type="reset" name="Reset" value="Reset" required>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+
+</html>

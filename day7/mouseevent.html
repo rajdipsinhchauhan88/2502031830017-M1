@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     select Product : <select name="" id="product">
+        <option value="323233">AC</option>
+        <option value="565321">Tv</option>
+        <option value="54554">Regidd</option>
+        <option value="32356233">laptop</option>
+    </select>
+    <br><br>
+    net prize : <input type="text" id="prize"> <br><br>
+
+    qauntiti : <input type="text"  id="quantity"> <br><br>
+    total Amount : <input type="text" id="amount">
+ <br><br>
+    <!-- mouse event -->
+
+    <img src="offblb.jpg" style="width: 500px;" alt="" id="bulb">
+    
+    <script>
+     var product = document.getElementById("product");
+     var qunatity = document.getElementById("quantity");
+     var amount = document.getElementById("amount");
+     var prize = document.getElementById("prize");
+
+     product.addEventListener("change",()=>{
+         prize.value = product.value;
+     });
+
+     amount.addEventListener("focus",()=>{
+    amount.value=product.value * qunatity.value;
+    });
+    
+
+ 
+
+    </script>
+
+    <script>
+   //mouse 
+    var a = document.getElementById("bulb");
+a.addEventListener("mouseover",()=>{
+    a.src= "onblb.jpg";
+}); 
+    a.addEventListener("mouseout",()=>{
+    a.src= "offblb.jpg";
+});
+
+    </script>
+</body>
+</html>
