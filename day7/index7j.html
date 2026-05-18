@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day7</title>
+</head>
+
+<body>
+
+    <h1 id="Regform">Registration Form</h1>
+
+    <form style="background-color: lemonchiffon; display: flex; width: 500px;"  name="RegForm" method="post" id="RegForm" onsubmit="return validate()">
+
+        <table border="5" cellpadding="10">
+
+            <tr>
+                <td colspan="2">
+                    <h1 style="text-align:center;">
+                        REGISTRATION FORM
+                    </h1>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Name :</td>
+                <td>
+                    <input type="text" size="50" name="Name" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>E-mail Address:</td>
+                <td>
+                    <input type="text" size="50" name="Email" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" size="50" name="Password" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mobile:</td>
+                <td>
+                    <input type="text" size="50" name="Telephone" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Your Course :</td>
+                <td>
+
+                    <select name="Subject">
+
+                        <option value="">Select Course</option>
+                        <option>B.Tech</option>
+                        <option>M.Tech</option>
+                        <option>BCA</option>
+                        <option>MCA</option>
+
+                    </select>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Comments:</td>
+
+                <td>
+                    <textarea cols="40" name="Comment"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+
+                <td>
+                    <input type="submit" value="Submit" name="Submit" />
+
+                    &nbsp;
+
+                    <input type="reset" value="Reset" name="Reset" />
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+    <hr><hr><hr>
+    <br><br><br> 
+
+
+    <script src="day7.js"></script>
+
+</body>
+</html>

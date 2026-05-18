@@ -1,0 +1,44 @@
+h1 {
+
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 30px;
+
+}
+
+.float {
+
+    height: 150px;
+
+}
+
+.float div {
+
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.float :nth-child(1) {
+
+    float: left;
+    background-color: rgb(86, 62, 224);
+
+}
+
+.float :nth-child(2) {
+
+    float: right;
+    background-color: red;
+
+}
