@@ -1,0 +1,632 @@
+/* header section */
+
+#tbackimg {
+    background-image: url(Mountain\ View\ Garden\ \(1\).avif);
+    width: 100%;
+    height: 862px;
+    object-fit: cover;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: rgb(138, 129, 118);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-clip: content-box;
+    height: 100px;
+}
+
+#header img{
+    height: auto;
+    width: 90px;
+    margin-left: 20px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#navbar li {
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 1000;
+    color: white;
+    transition: 0.1s;
+}
+
+#navbar li a:hover,
+#navbar li a.homeac {
+    color: #850f00;
+
+}
+#navbar li a.homeac::after,
+#navbar li a:hover::after
+ { 
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #850f00;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#hero h1 {
+    font-size: 70px;
+    color: white;
+    margin-left: 490px;
+    margin-top: 280px;
+    font-weight: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 15px;
+}
+
+#hero p {
+    font-size: 21px;
+    color: white;
+    margin-left: 635px;
+    margin-top: px;
+    font-weight: 1px;
+    letter-spacing: 5px;
+}
+
+#hero a {
+    background-image: url('img/button.back.png');
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.1s;
+   
+}
+#hero li {
+     margin-left: 700px;
+    margin-top: 60px;
+   position: relative;
+}
+
+
+#hero li a:hover,
+#hero li a.exolore {
+    color: #850f00;
+}
+
+#hero1 {
+    width: 100%;
+    display: flex;
+   margin-top: 10PX;
+    height: 761px;
+    
+    object-fit: cover;
+}
+
+
+
+.leftd {
+    width: 35%;
+    font-size: 40px;
+    color: #330600;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+.rightd {
+    width: 65%;
+    background-image: url(travel.jpg);
+    
+}
+.leftd svg {
+    margin-top: 100px;
+    position: relative;
+    bottom: 0;
+
+}
+.leftd p {
+    color: #330600;
+    font-size: 20px;
+}
+
+#hero2 {
+    background-color: rgb(205, 248, 248);
+    height: 2420px;
+}
+
+
+#hero2 h1 {
+    width: 50%;
+    font-size: 60px;
+    color: #330600;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    padding-left: 30px;
+    margin: 0;
+    padding-top: 20px;
+}
+#hero2 .hero2p {
+    
+    font-size:20px;
+    color: #330600;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    padding-left: 30px;
+    margin: 0;
+    bottom: 70px;
+    right: -1100px;
+    position: relative;
+    display: inline;
+}
+
+.h2im1 {
+    background-image: url(AdobeStock_165491536.avif);
+    width: 97%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 700px;
+    margin-top: 19px;
+}
+li {
+
+    list-style-type: none;
+}
+
+.h2mi11 {
+    background-color: white;
+    position: relative;
+    right: -1100px;
+    width: 320px;
+    height: 150px;
+    top: 20px;
+}
+
+.h2mi11 h3 {
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 20px;
+    color: #7a2a1f;
+    font-family: 'Times New Roman', Times, serif;
+} 
+.h2mi11 p {
+    font-size: 15px;
+    padding-left: 20px;
+    color: #7a2a1f;                              ;
+    
+} 
+
+.h2im2 {
+    background-image: url(AdobeStock_699681846.avif);
+    width: 97%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 700px;
+    
+}
+
+.h2mi22 {
+    background-color: white;
+    position: relative;
+    right: -1100px;
+    width: 320px;
+    height: 150px;
+    top: 20px;
+}
+
+.h2mi22 h3 {
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 20px;
+    color: #7a2a1f;
+    font-family: 'Times New Roman', Times, serif;
+} 
+.h2mi22 p {
+    font-size: 15px;
+    padding-left: 20px;
+    color: #7a2a1f;                              ;
+    
+} 
+
+.h2im3 {
+    background-image: url(Woman\ Enjoying\ View.avif);
+    width: 97%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 700px;
+    margin-top: 19px;
+    background-position: 0%;
+    background-size: 1500px;
+    background-repeat: no-repeat;
+}
+
+.h2im3 h2 {
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 33px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 500px;
+} 
+
+.h2im33 li{
+     
+   transition: 0.1s;
+   background-color: white;
+   height: 30px; 
+   width: 140px;
+   text-decoration: none;
+   border-radius: 5px;
+   margin-left: 33px;
+    padding-left: 12px;
+    list-style: none;
+    position: relative;
+    padding-top: 10px;
+    
+    
+
+}
+
+
+#h2im33 li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 1000;
+    color: white;
+    transition: 0.1s;
+}
+
+
+.h2im33 li a:hover,
+.h2im33 li a.exolore {
+    color: #850f00;
+}
+
+#h2im33 li a.h2im33::after,
+#h2im33 li a:hover::after
+ { 
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #850f00;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#hero3 {
+    background-color: rgb(255, 252, 228);
+    height: 530px;
+    width: 100%;
+    
+}
+
+.h3h {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px,1fr));
+    
+}
+
+.h3h1 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #673129;
+    
+}
+
+.h3h2 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #673129;
+}
+
+.h3h3 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #673129;
+}
+
+.h3h4 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #673129;
+}
+
+#onlyimg {
+    background-image: url(Cyclists\ Near\ Landmark.avif);
+    height: 600px;
+    width: 100%;
+}
+#hero4 {
+    display: flex;
+}
+
+.hr41 {
+    background-color: rgb(255, 253, 227);
+    width: 33%;
+    margin-left: 10px;
+    height: 300px;  
+    padding-left: 20px;
+     
+}
+
+
+.hr41 img {
+position: relative;
+    width: 150px;
+    height: 190px;
+right: -300px;
+bottom: 70px;
+display: inline;
+}
+
+.hr42 {
+     background-color: rgb(255, 253, 227);
+    width: 33%;
+    margin-left: 10px;
+    height: 300px;  
+    padding-left: 20px;
+}
+
+.hr42 img {
+position: relative;
+    width: 150px;
+    height: 190px;
+right: -300px;
+bottom: 70px;
+display: inline;
+}
+
+.hr43 {
+    background-color: rgb(255, 253, 227);
+    width: 33%;
+    margin-left: 10px;
+    height: 300px;  
+    padding-left: 20px;
+}
+
+.hr43 img {
+position: relative;
+    width: 150px;
+    height: 190px;
+right: -300px;
+bottom: 70px;
+display: inline;
+}
+
+#hero5 {
+    display: inline;
+    
+
+}
+.hr51 {
+    background-color: rgb(223, 255, 255);
+    height: 300px;
+    width: 65%;
+    position: relative;
+    right: -500px;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+
+.hr51 svg {
+    position: relative;
+    right: -880px;
+    padding-top: 30px;
+    color: #55211a;
+}
+
+#onlyimg2 {
+    background-image: url(footer.avif);
+    height: 700px;
+    width: 100%;
+      display: flex;
+}
+
+.onlimg11 {
+    background-color: white;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    top: 20px;
+    margin-left: 20px;
+    right: -1000px;
+    
+    
+}
+
+
+.onlimg1 h3 {
+    width: 100%;
+    font-size: 50px;
+    color: #330600;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    padding-left: 50px;
+    padding-top: 20px;
+   
+}
+
+
+
+.onlimg11 li{
+     
+   transition: 0.1s;
+   background-color: rgb(119, 0, 0);
+   height: 30px; 
+   width: 240px;
+   text-decoration: none;
+   border-radius: 5px;
+   margin-left: 20px;
+   margin-top: 20px;
+    padding-left: 120px;
+    list-style: none;
+    position: relative;
+    padding-top: 10px;
+    
+    
+
+}
+
+.onlimg11 li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 1000;
+    color: white;
+    transition: 0.1s;
+}
+
+/*email section*/
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #00132d;
+    padding-left:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 250px;
+}
+
+#newsletter h4 {
+    font-size: 29px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#newsletter p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #818ea0;
+}
+#newsletter p span {
+    color: #ffbd27;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#newsletter .form {
+    display: flex;
+    width: 35%;
+
+
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    right: 50px;
+}
+#newsletter button {
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: relative;
+    right: 50px;
+    height: 53.7px;
+    width: 120px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    margin-top: 30px;
+    
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+}
+
+footer .logo {
+    margin-bottom: 30px;
+    
+}
+
+footer .col img {
+    margin-bottom: 30px;
+    width: 200px;
+    margin-left: -31px;
+}
+footer h4 {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 16px;
+   margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: #330600;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .col-install .row img {
+    border: 1px solid #330600;
+    border-radius: 6px;
+}
+
+footer .col-install .img {
+    margin: 10px  0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #330600;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
