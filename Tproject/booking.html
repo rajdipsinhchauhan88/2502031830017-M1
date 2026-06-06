@@ -1,0 +1,25 @@
+<form onsubmit="return bookingConfirm()">
+
+    <input type="text" id="name" placeholder="Full Name" required>
+
+    <input type="email" id="email" placeholder="Email" required>
+
+    <input type="number" id="persons" placeholder="Number Of Persons" required>
+
+    <input type="date" required>
+
+    <button type="submit">Confirm Booking</button>
+
+</form> 
+<script>
+
+function bookingConfirm(){
+
+    let name = document.getElementById("name").value;
+
+    alert("Thank You " + name + "! Your booking is confirmed.");
+
+    return false;
+}
+
+</script>

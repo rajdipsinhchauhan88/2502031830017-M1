@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Messages - TravelsBy</title>
+  <link rel="stylesheet" href="tcs.css">
+</head>
+<body>
+  <section id="header">
+    <div class="logo">TravelsBy</div>
+    <div>
+      <ul id="navbar">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/package">package</a></li>
+        <li><a href="/place">places</a></li>
+        <li><a href="/contact">contact</a></li>
+        <% if (userName) { %>
+          <li><a href="/mybookings">My Bookings</a></li>
+          <li><a href="/mycontacts">My Messages</a></li>
+          <li><a href="/logout">Logout</a></li>
+        <% } else { %>
+          <li><a href="/login">Login</a></li>
+        <% } %>
+      </ul>
+    </div>
+  </section>
+
+  <section style="padding:20px;">
+    <h1>My Messages</h1>
+
+    <% if (!contacts || contacts.length === 0) { %>
+      <p>No messages found for your account.</p>
+    <% } else { %>
+      <table border="1" cellpadding="10" cellspacing="0" style="width:100%; border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% contacts.forEach(c => { %>
+            <tr>
+              <td><%= c.name %></td>
+              <td><%= c.email %></td>
+              <td><%= c.mobile %></td>
+              <td><%= c.message %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    <% } %>
+  </section>
+</body>
+</html>
+

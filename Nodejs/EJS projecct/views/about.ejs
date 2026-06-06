@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+    
+</head>
+<body>
+
+    <h1><%= title %></h1>
+    <p><%= message %></p>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Mobile</th>
+        </tr>
+
+        <% 
+            let students = [
+                {
+                    id: 1,
+                    name: "Raj",
+                    city: "Surat",
+                    mobile: "9876543210"
+                },
+
+                {
+                    id: 2,
+                    name: "Amit",
+                    city: "Ahmedabad",
+                    mobile: "9876501234"
+                },
+
+                {
+                    id: 3,
+                    name: "Meet",
+                    city: "Baroda",
+                    mobile: "9876511111"
+                }
+            ];
+
+            students.forEach(student => {
+        %>
+
+        <tr>
+            <td><%= student.id %></td>
+            <td><%= student.name %></td>
+            <td><%= student.city %></td>
+            <td><%= student.mobile %></td>
+        </tr>
+
+        <% }) %>
+
+    </table>
+
+</body>
+</html>

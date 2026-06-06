@@ -1,6 +1,10 @@
 const express = require('express')
 const app  = express()
 
+
+app.set('view enginee','ejs')
+
+
 app.listen(3000, ()=> {
     console.log('succsessfully done')
 }) 
@@ -19,4 +23,5 @@ app.get('/search', (req, res)=>{
 
     res.send(`Search results for name : ${name}, Age: ${age}1`)
 })
+
 

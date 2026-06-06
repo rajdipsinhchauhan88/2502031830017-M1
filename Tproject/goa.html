@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goa Package</title>
+<link rel="stylesheet" href="goa.css">
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+/* Navbar */
+
+#header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#4b2e2e;
+    padding:20px 50px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+#navbar{
+    display:flex;
+    list-style:none;
+}
+
+#navbar li{
+    margin-left:25px;
+}
+
+#navbar a{
+    text-decoration:none;
+    color:white;
+}
+
+.gallery,
+.hotels,
+.activities,
+.tour-plan,
+.includes,
+.reviews{
+    padding:60px;
+}
+
+.gallery h2,
+.hotels h2,
+.activities h2,
+.tour-plan h2,
+.includes h2,
+.reviews h2{
+    text-align:center;
+    color:#4b2e2e;
+    margin-bottom:30px;
+}
+
+.gallery-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.gallery-box img{
+    width:350px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.hotel-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.hotel-card{
+    width:300px;
+    box-shadow:0 0 10px #ccc;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.hotel-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.hotel-card h3,
+.hotel-card p{
+    padding:10px;
+}
+
+.activities,
+.tour-plan,
+.includes,
+.reviews{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.activities h2,
+.tour-plan h2,
+.includes h2,
+.reviews h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.activities ul,
+.includes ul{
+    width:100%;
+    margin-left:30px;
+    line-height:2;
+}
+
+.tour-plan,
+.includes{
+    background: rgb(206, 235, 255) ;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    margin:30px auto;
+    max-width:900px;
+}
+.review-card{
+    width:500px;
+    margin:20px auto;
+    padding:20px;
+    box-shadow:0 0 10px #ccc;
+    border-radius:10px;
+}
+
+/* Hero */
+
+.hero{
+    height:400px;
+    background:url("https://images.unsplash.com/photo-1512343879784-a960bf40e7f2");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+/* Details */
+
+.details{
+    display:flex;
+    gap:50px;
+    padding:60px;
+}
+
+.left img{
+    width:500px;
+    border-radius:15px;
+}
+
+.right{
+    line-height:2;
+}
+
+.right h2{
+    color:#4b2e2e;
+}
+
+.right button{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#4b2e2e;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* Booking */
+
+#bookingForm{
+    padding:60px;
+    text-align:center;
+    background:#f5f5f5;
+}
+
+#bookingForm input{
+    width:300px;
+    padding:12px;
+    margin:10px;
+}
+
+#bookingForm button{
+    padding:12px 25px;
+    background:#4b2e2e;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+
+<section id="header">
+
+    <div class="logo">TravelsBy</div>
+
+    <ul id="navbar">
+        <li><a href="mindex.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="package.html">Package</a></li>
+        <li><a href="place.html">Places</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
+</section>
+
+<!-- Hero -->
+
+<section class="hero">
+    <h1>Goa Package</h1>
+    <p>Sun, Sand & Sea Awaits You</p>
+</section>
+
+<!-- Details -->
+
+<section class="details">
+
+    <div class="left">
+
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2">
+
+    </div>
+
+    <div class="right">
+
+        <h2>Package Details</h2>
+
+        <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+
+        <p><strong>Price:</strong> ₹8,999</p>
+
+        <p><strong>Hotel:</strong> 3 Star Luxury Hotel</p>
+
+        <p><strong>Meals:</strong> Breakfast Included</p>
+
+        <p><strong>Transport:</strong> AC Bus Included</p>
+
+        <h3>Places Covered</h3>
+
+        <ul>
+            <li>Baga Beach</li>
+            <li>Calangute Beach</li>
+            <li>Dudhsagar Falls</li>
+            <li>Fort Aguada</li>
+            <li>Anjuna Beach</li>
+        </ul>
+
+        <button onclick="bookNow()">Book Now</button>
+
+    </div>
+
+</section>
+
+<section class="gallery">
+
+    <h2>Destination Gallery</h2>
+
+    <div class="gallery-box">
+
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2">
+
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+
+    </div>
+
+</section>
+<!--hotel-->
+<section class="hotels">
+
+    <h2>Recommended Hotels</h2>
+
+    <div class="hotel-container">
+
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+            <h3>Taj Resort Goa</h3>
+            <p>⭐⭐⭐⭐⭐ Luxury Beach Resort</p>
+        </div>
+
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461">
+            <h3>Grand Hyatt Goa</h3>
+            <p>⭐⭐⭐⭐⭐ Sea View Rooms</p>
+        </div>
+
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+            <h3>Holiday Inn Resort</h3>
+            <p>⭐⭐⭐⭐ Family Friendly Resort</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!--activiti-->
+<section class="activities">
+
+    <h2>Things To Do In Goa</h2>
+
+    <ul>
+        <li>🏖 Beach Walking</li>
+        <li>🚤 Water Sports</li>
+        <li>🌅 Sunset Cruise</li>
+        <li>🏰 Fort Aguada Visit</li>
+        <li>🌴 Island Tour</li>
+        <li>🎉 Nightlife Experience</li>
+    </ul>
+
+</section>
+
+<!--tpurplan-->
+
+<section class="tour-plan">
+
+    <h2>Tour Itinerary</h2>
+
+    <h3>Day 1</h3>
+    <p>Arrival & Beach Visit</p>
+
+    <h3>Day 2</h3>
+    <p>Water Sports & Fort Aguada</p>
+
+    <h3>Day 3</h3>
+    <p>Shopping & Departure</p>
+
+</section>
+
+<section class="includes">
+
+    <h2>Package Includes</h2>
+
+    <ul>
+        <li>✔ Hotel Stay</li>
+        <li>✔ Daily Breakfast</li>
+        <li>✔ Airport Pickup</li>
+        <li>✔ Local Sightseeing</li>
+        <li>✔ Travel Guide</li>
+    </ul>
+
+</section>
+
+<!--customer rewie-->
+<section class="reviews">
+
+    <h2>Traveler Reviews</h2>
+
+    <div class="review-card">
+        ⭐⭐⭐⭐⭐
+        <p>Amazing experience and beautiful beaches.</p>
+        <h4>- Raj</h4>
+    </div>
+
+    <div class="review-card">
+        ⭐⭐⭐⭐⭐
+        <p>Best trip ever. Hotel and service were excellent.</p>
+        <h4>- Priya</h4>
+    </div>
+
+</section>
+
+<!-- Booking Form -->
+
+<section id="bookingForm">
+
+    <h2>Book Your Trip</h2>
+
+    <input type="text" id="name" placeholder="Enter Name">
+
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <input type="number" id="persons" placeholder="Number Of Persons">
+
+    <button onclick="confirmBooking()">
+        Confirm Booking
+    </button>
+
+</section>
+
+<script>
+
+function bookNow(){
+
+    document.getElementById("bookingForm").scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
+
+function confirmBooking(){
+
+    let name = document.getElementById("name").value;
+    let persons = document.getElementById("persons").value;
+
+    if(name==="" || persons===""){
+        alert("Please fill all fields");
+        return;
+    }
+
+    alert(
+        "🎉 Booking Successful!\n\n" +
+        "Name : " + name +
+        "\nPackage : Goa Package" +
+        "\nPersons : " + persons
+    );
+}
+
+</script>
+
+</body>
+</html>

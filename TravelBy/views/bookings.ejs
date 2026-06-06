@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bookings - TravelsBy</title>
+  <link rel="stylesheet" href="tcs.css">
+</head>
+<body>
+  <section id="header">
+    <div class="logo">TravelsBy</div>
+    <div>
+      <ul id="navbar">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/package">package</a></li>
+        <li><a href="/place">places</a></li>
+        <li><a href="/contact">contact</a></li>
+        <% if (userName) { %>
+          <li><a href="/mybookings">My Bookings</a></li>
+          <li><a href="/mycontacts">My Messages</a></li>
+          <li><a href="/logout">Logout</a></li>
+        <% } else { %>
+          <li><a href="/login">Login</a></li>
+        <% } %>
+      </ul>
+    </div>
+  </section>
+
+  <section style="padding:20px;">
+    <h1>My Bookings</h1>
+
+    <% if (!bookings || bookings.length === 0) { %>
+      <p>No bookings found for your account.</p>
+      <p style="opacity:0.8;">After you book a trip (Goa/other package), it will appear here.</p>
+    <% } else { %>
+      <table border="1" cellpadding="10" cellspacing="0" style="width:100%; border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th>Destination</th>
+            <th>Persons</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Booking Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% bookings.forEach(b => { %>
+            <tr>
+              <td><%= b.packageName %></td>
+              <td><%= b.persons %></td>
+              <td><%= b.name %></td>
+              <td><%= b.email %></td>
+              <td><%= new Date(b.bookingDate).toLocaleString() %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    <% } %>
+  </section>
+</body>
+</html>
+
